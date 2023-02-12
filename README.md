@@ -71,5 +71,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 # reactshineaki
 
-# https://www.youtube.com/watch?v=jx5hdo50a2M
+# https://youtu.be/jx5hdo50a2M?t=3985
 # npm install --legacy-peer-deps
