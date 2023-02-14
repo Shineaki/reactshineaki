@@ -11,9 +11,10 @@ import {
   Financial, ColorPicker, ColorMapping, Editor
 } from './pages';
 import './App.css';
+import { useStateContext } from './contexts/ContextProvider';
 
 const App = () => {
-  const activeMenu = true;
+  const { activeMenu } = useStateContext();
   return (
     <div>
       <BrowserRouter>
