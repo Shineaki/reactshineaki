@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <div className="mt-24">
       <div className="flex flex-wrap justify-center">
-        <div className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg h-44 rounded-xl w-full lg:w-5/6 p-8 pt-9 m-3 bg-no-repeat bg-cover bg-center bg-gradient-to-r from-sky-50 to-blue-100">
+        <div className="bg-white h-44 rounded-xl w-full lg:w-5/6 p-8 pt-9 m-3 bg-no-repeat bg-cover bg-center bg-gradient-to-r from-sky-50 to-blue-100">
           <div className="flex justify-between items-center">
             <div>
               <p className="font-bold text-gray-400">Earnings</p>
@@ -26,7 +26,7 @@ const Home = () => {
       <div className='flex flex-wrap justify-center gap-4 items-center'>
         {earningData.map((item) => (
           <div key={item.title}
-            className="bg-white dark:text-gray-200 dark:bg-secondary-darj-bg md:w-56 p-4 pt-9 rounded-2xl">
+            className="bg-white md:w-56 p-4 pt-9 rounded-2xl">
             <button type="button" style={{ color: item.iconColor, backgroundColor: item.iconBg }} className="text-2xl opacity-0.9 rounded-full p-4 hover:drop-shadow-xl">
               {item.icon}
             </button>

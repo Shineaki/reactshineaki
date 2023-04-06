@@ -4,8 +4,6 @@ import { FiEdit, FiBarChart } from 'react-icons/fi';
 import { BiDrink, BiHome } from 'react-icons/bi';
 import { BsKanban, BsBoxSeam } from 'react-icons/bs';
 import { BiColorFill } from 'react-icons/bi';
-import { IoMdContacts } from 'react-icons/io';
-import { RiContactsLine } from 'react-icons/ri';
 import { MdOutlineSupervisorAccount } from 'react-icons/md';
 import { HiOutlineRefresh } from 'react-icons/hi';
 import { GrLocation } from 'react-icons/gr';
@@ -27,15 +25,7 @@ export const links = [
       {
         name: 'Info',
         icon: <BiDrink />,
-      },
-      {
-        name: 'employees',
-        icon: <IoMdContacts />,
-      },
-      {
-        name: 'customers',
-        icon: <RiContactsLine />,
-      },
+      }
     ],
   },
   {

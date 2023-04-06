@@ -2,8 +2,6 @@ import React from 'react'
 
 import { Link, NavLink } from 'react-router-dom';
 import { GiSelfLove } from 'react-icons/gi';
-import { MdOutlineCancel } from 'react-icons/md';
-import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 import { links } from '../data/dummy';
 import { useStateContext } from '../contexts/ContextProvider';
 
@@ -11,11 +9,11 @@ const Sidebar = () => {
   const { activeMenu, setActiveMenu } = useStateContext();
   const { screenSize } = useStateContext();
   const activeLink = 'flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-gray-700 m-2 bg-sky-100';
-  const normalLink = 'flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-gray-700 dark:text-gray-200 dark:hover:text-black hover:bg-light-gray m-2';
+  const normalLink = 'flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-gray-700 hover:bg-light-gray m-2';
 
   const handleCloseSideBar = () => {
-    if (activeMenu !== undefined && screenSize > 900) {
-      setActiveMenu(true);
+    if (activeMenu !== undefined && screenSize <= 900) {
+      setActiveMenu(false);
     }
   };
 
@@ -24,14 +22,9 @@ const Sidebar = () => {
       {activeMenu && (
         <>
           <div className='flex justify-between items-center'>
-            <Link to="/"  onClick={handleCloseSideBar} className="items-center gap-3 ml-3 mt-4 flex text-xl font-extrabold tracking-tight dark:text-white text-slate-900">
+            <Link to="/"  onClick={handleCloseSideBar} className="items-center gap-3 ml-3 mt-4 flex text-xl font-extrabold tracking-tight text-slate-900">
               <GiSelfLove /><span>Ádám és Domi</span>
             </Link>
-            <TooltipComponent content="Menu" position='BottomCenter'>
-              <button type='button' onClick={() => setActiveMenu((prevActiveMenu) => !prevActiveMenu)} className='text-xl rounded-full p-3 hover:bg-light-gray mt-4 block'>
-                <MdOutlineCancel />
-              </button>
-            </TooltipComponent>
           </div>
           <div className='mt-10'>
             {links.map((item) => (
@@ -43,7 +36,7 @@ const Sidebar = () => {
                   <NavLink
                     to={`/${link.name}`}
                     key={link.name}
-                    onClick={() => { }}
+                    onClick={handleCloseSideBar}
                     className={({ isActive }) =>
                       isActive ? activeLink : normalLink
                     }
