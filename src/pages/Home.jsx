@@ -1,11 +1,9 @@
 import React from 'react'
-import { BsCurrencyDollar } from 'react-icons/bs'
-import { GoPrimitiveDot } from 'react-icons/go';
-import { Stacked, Pie, Button, SparkLine } from '../components';
-import { earningData, SparklineAreaData, ecomPieChartData } from '../data/dummy';
-import { useStateContext } from '../contexts/ContextProvider';
+import { Button } from '../components';
+import { earningData } from '../data/dummy';
+// import { useStateContext } from '../contexts/ContextProvider';
 
-const Ecommerce = () => {
+const Home = () => {
   return (
     <div className="mt-24">
       <div className="flex flex-wrap justify-center">
@@ -47,4 +45,4 @@ const Ecommerce = () => {
   )
 }
 
-export default Ecommerce
+export default Home
