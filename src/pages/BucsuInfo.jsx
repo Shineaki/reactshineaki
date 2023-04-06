@@ -1,8 +1,8 @@
 import React from 'react'
 
-const BucsuInfo = () => {
+function BucsuInfo(){
   return (
-    <div>Orders</div>
+    <div>BucsuInfo</div>
   )
 }
 

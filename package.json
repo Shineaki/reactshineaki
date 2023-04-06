@@ -3,9 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@react-query-firebase/analytics": "^0.1.2-alpha.0",
+    "@react-query-firebase/database": "^1.0.0-dev.2",
+    "@react-query-firebase/firestore": "^1.0.0-dev.7",
+    "firebase": "^9.19.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.3.1",
+    "react-query": "^3.39.3",
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0"
   },

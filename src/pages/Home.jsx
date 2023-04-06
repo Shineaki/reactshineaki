@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 import { Button } from '../components';
 import { earningData } from '../data/dummy';
 // import { useStateContext } from '../contexts/ContextProvider';
+import { useAnalyticsLogEvent } from "@react-query-firebase/analytics";
+import { analytics } from "../components/FirebaseApp";
 
-const Home = () => {
+function Home(){
   return (
     <div className="mt-24">
       <div className="flex flex-wrap justify-center">

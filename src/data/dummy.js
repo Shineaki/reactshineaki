@@ -2,28 +2,30 @@ import React from 'react';
 import { AiOutlineCalendar } from 'react-icons/ai';
 import { FiEdit, FiBarChart } from 'react-icons/fi';
 import { BiDrink, BiHome } from 'react-icons/bi';
-import { BsKanban, BsBoxSeam } from 'react-icons/bs';
-import { BiColorFill } from 'react-icons/bi';
+import { BsBoxSeam, BsMusicNoteList, BsFillCameraFill } from 'react-icons/bs';
+import { BiTimer } from 'react-icons/bi';
 import { MdOutlineSupervisorAccount } from 'react-icons/md';
 import { HiOutlineRefresh } from 'react-icons/hi';
 import { GrLocation } from 'react-icons/gr';
 
 export const links = [
   {
-    title: 'Kezdőlap',
+    title: '',
     links: [
       {
         name: 'Home',
+        url: 'home',
         icon: <BiHome />,
       },
     ],
   },
 
   {
-    title: 'Legény- / Lánybúcsú',
+    title: '',
     links: [
       {
-        name: 'Info',
+        name: 'Legény és Lánybúcsú',
+        url: 'bucsu',
         icon: <BiDrink />,
       }
     ],
@@ -32,20 +34,29 @@ export const links = [
     title: 'Esküvő',
     links: [
       {
-        name: 'Esküvő',
+        name: '#SaveTheDate',
+        url: 'information',
         icon: <AiOutlineCalendar />,
       },
       {
-        name: 'kanban',
-        icon: <BsKanban />,
+        name: 'Menetrend',
+        url: 'schedule',
+        icon: <BiTimer />,
       },
       {
-        name: 'editor',
-        icon: <FiEdit />,
+        name: 'Zenedoboz',
+        url: 'music',
+        icon: <BsMusicNoteList />,
       },
       {
-        name: 'color-picker',
-        icon: <BiColorFill />,
+        name: 'Fényképek',
+        url: 'photos',
+        icon: <BsFillCameraFill />,
+      },
+      {
+        name: 'Szolgáltatók',
+        url: 'services',
+        icon: <BsFillCameraFill />,
       },
     ],
   },
