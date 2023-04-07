@@ -1,13 +1,14 @@
 import React from 'react';
 import { FiBarChart } from 'react-icons/fi';
 import { BiDrink, BiHomeHeart } from 'react-icons/bi';
-import { BsBoxSeam, BsFillCameraFill, BsFillCameraReelsFill, BsFillBalloonHeartFill } from 'react-icons/bs';
+import { BsBoxSeam, BsFillCameraFill, BsFillCameraReelsFill } from 'react-icons/bs';
 import { MdOutlineSupervisorAccount } from 'react-icons/md';
 import { HiOutlineRefresh, HiOutlineInformationCircle } from 'react-icons/hi';
 import { GrLocation, GrGallery, GrSchedulePlay } from 'react-icons/gr';
 import { GiMusicalNotes } from 'react-icons/gi';
 import { ImFileMusic } from 'react-icons/im';
 import { IoMdBowtie } from 'react-icons/io';
+import { AiOutlineHeart } from 'react-icons/ai';
 
 export const links = [
   {
@@ -16,7 +17,7 @@ export const links = [
       {
         name: '#SaveTheDate',
         url: 'savethedate',
-        icon: <BsFillBalloonHeartFill />,
+        icon: <AiOutlineHeart />,
       },
       {
         name: 'Menetrend',
