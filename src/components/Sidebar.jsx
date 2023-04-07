@@ -21,12 +21,12 @@ const Sidebar = () => {
     <div className='ml-3 h-screen overflow-auto md:hover:overflow-auto pb-10'>
       {activeMenu && (
         <>
-          <div className='flex justify-between items-center'>
-            <Link to="/"  onClick={handleCloseSideBar} className="items-center gap-3 ml-3 mt-4 flex text-xl font-extrabold tracking-tight text-slate-900">
-              <GiSelfLove /><span>Domi és Ádám</span>
+          <div>
+            <Link to="/"  onClick={handleCloseSideBar} className="items-center gap-3 ml-5 mt-6 flex text-xl font-extrabold tracking-tight text-slate-900">
+              <GiSelfLove /><span>Domi + Ádám</span>
             </Link>
           </div>
-          <div className='mt-10'>
+          <div className='mt-8'>
             {links.map((item) => (
               <div key={item.title}>
                 <p className='text-gray-400 m-3 mt-4 uppercase'>

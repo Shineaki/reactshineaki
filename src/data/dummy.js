@@ -1,63 +1,83 @@
 import React from 'react';
-import { AiOutlineCalendar } from 'react-icons/ai';
 import { FiBarChart } from 'react-icons/fi';
-import { BiDrink, BiHome } from 'react-icons/bi';
-import { BsBoxSeam, BsMusicNoteList, BsFillCameraFill } from 'react-icons/bs';
-import { BiTimer } from 'react-icons/bi';
+import { BiDrink, BiHomeHeart } from 'react-icons/bi';
+import { BsBoxSeam, BsFillCameraFill, BsFillCameraReelsFill, BsFillBalloonHeartFill } from 'react-icons/bs';
 import { MdOutlineSupervisorAccount } from 'react-icons/md';
-import { HiOutlineRefresh } from 'react-icons/hi';
-import { GrLocation } from 'react-icons/gr';
+import { HiOutlineRefresh, HiOutlineInformationCircle } from 'react-icons/hi';
+import { GrLocation, GrGallery, GrSchedulePlay } from 'react-icons/gr';
+import { GiMusicalNotes } from 'react-icons/gi';
+import { ImFileMusic } from 'react-icons/im';
+import { IoMdBowtie } from 'react-icons/io';
 
 export const links = [
-  {
-    title: '',
-    links: [
-      {
-        name: 'Home',
-        url: 'home',
-        icon: <BiHome />,
-      },
-    ],
-  },
-
-  {
-    title: '',
-    links: [
-      {
-        name: 'Legény és Lánybúcsú',
-        url: 'bucsu',
-        icon: <BiDrink />,
-      }
-    ],
-  },
   {
     title: 'Esküvő',
     links: [
       {
         name: '#SaveTheDate',
-        url: 'information',
-        icon: <AiOutlineCalendar />,
+        url: 'savethedate',
+        icon: <BsFillBalloonHeartFill />,
       },
       {
         name: 'Menetrend',
         url: 'schedule',
-        icon: <BiTimer />,
+        icon: <GrSchedulePlay />,
       },
       {
         name: 'Zenedoboz',
         url: 'music',
-        icon: <BsMusicNoteList />,
+        icon: <ImFileMusic />,
       },
       {
-        name: 'Fényképek',
-        url: 'photos',
+        name: 'Galéria',
+        url: 'galery',
+        icon: <GrGallery />,
+      },
+    ],
+  },
+  {
+    title: 'Szolgáltatók',
+    links: [
+      {
+        name: 'Catering',
+        url: 'catering',
+        icon: <BiDrink />,
+      },
+      {
+        name: 'Ceremóniamester',
+        url: 'ceremoniamester',
+        icon: <IoMdBowtie />,
+      },
+      {
+        name: 'Filmes',
+        url: 'filmes',
+        icon: <BsFillCameraReelsFill />,
+      },
+      {
+        name: 'Fotós',
+        url: 'fotos',
         icon: <BsFillCameraFill />,
       },
       {
-        name: 'Szolgáltatók',
-        url: 'services',
-        icon: <BsFillCameraFill />,
+        name: 'Helyszín',
+        url: 'helyszin',
+        icon: <BiHomeHeart />,
       },
+      {
+        name: 'Zenekar',
+        url: 'zenekar',
+        icon: <GiMusicalNotes />,
+      }
+    ],
+  },
+  {
+    title: 'Legény és Lánybúcsú',
+    links: [
+      {
+        name: 'Információ',
+        url: 'bucsu',
+        icon: <HiOutlineInformationCircle />,
+      }
     ],
   },
 ];
