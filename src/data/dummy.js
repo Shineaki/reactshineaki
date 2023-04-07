@@ -1,6 +1,6 @@
 import React from 'react';
 import { AiOutlineCalendar } from 'react-icons/ai';
-import { FiEdit, FiBarChart } from 'react-icons/fi';
+import { FiBarChart } from 'react-icons/fi';
 import { BiDrink, BiHome } from 'react-icons/bi';
 import { BsBoxSeam, BsMusicNoteList, BsFillCameraFill } from 'react-icons/bs';
 import { BiTimer } from 'react-icons/bi';

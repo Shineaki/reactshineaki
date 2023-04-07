@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { collection } from "firebase/firestore";
 import { firestore } from "../components/FirebaseApp";
 import { useFirestoreQuery } from "@react-query-firebase/firestore";
