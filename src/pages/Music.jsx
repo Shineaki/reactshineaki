@@ -1,8 +1,8 @@
 import React from 'react';
-import { collection } from "firebase/firestore";
-import { firestore, auth, fbProvider } from "../components/FirebaseApp";
-import { useFirestoreQuery } from "@react-query-firebase/firestore";
-import { useAuthUser, useAuthSignInWithPopup } from "@react-query-firebase/auth";
+// import { collection } from "firebase/firestore";
+import { auth, fbProvider } from "../components/FirebaseApp";
+// import { useFirestoreQuery } from "@react-query-firebase/firestore";
+import { useAuthUser } from "@react-query-firebase/auth";
 import { signInWithPopup } from "firebase/auth";
 import { BsFacebook } from 'react-icons/bs';
 
