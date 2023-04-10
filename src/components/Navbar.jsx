@@ -31,7 +31,7 @@ function Navbar(){
 
   return (
     (!activeMenu ? (
-    <div className='flex justify-start md:mx-6 relative'>
+    <div className='flex justify-start m-3 absolute'>
     <NavButton
       customFunc={() => setActiveMenu(!activeMenu)}
       color="blue"
