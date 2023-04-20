@@ -4,12 +4,12 @@ import save_the_date_image from '../data/save_the_date.png';
 // import domiadam_3 from '../data/3.png';
 
 function SaveTheDate(){
-  return (// xl:flex-row basis-1/2
-    <div className='flex flex-col  justify-center items-center mt-10'>
-      <div className='flex w-1/2 justify-center m-5'>
+  return (
+    <div className='flex flex-col items-center'>
+      <div className='flex w-full xl:w-3/4 justify-center'>
         <img src={save_the_date_image} className='' alt=''/>
       </div>
-      <div className='flex w-1/2 text-center m-5 p-10'>
+      <div className='flex w-full xl:w-3/4  text-center p-10'>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi est fugiat suscipit. Ipsum autem quas, porro esse velit ipsa numquam illum explicabo odit labore, doloremque et consectetur dicta tempore alias!
       </div>
     </div>

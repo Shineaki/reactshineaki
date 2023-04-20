@@ -1,7 +1,7 @@
 import { initializeApp } from 'firebase/app';
 import { getAnalytics } from 'firebase/analytics';
 import { getFirestore } from 'firebase/firestore';
-import { getAuth, FacebookAuthProvider } from 'firebase/auth';
+import { getAuth, GoogleAuthProvider } from 'firebase/auth';
 
 const firebase = initializeApp({
     apiKey: "AIzaSyCapDvfreP7_u9G2su8-1NHAwOlb9HeT-4",
@@ -15,14 +15,8 @@ const firebase = initializeApp({
 export const analytics = getAnalytics(firebase);
 export const firestore = getFirestore(firebase);
 export const auth = getAuth(firebase);
-
 auth.languageCode = 'hu';
 
-export const fbProvider = new FacebookAuthProvider();
-fbProvider.addScope('public_profile');
-fbProvider.setCustomParameters({
-    'display': 'popup'
-});
-
+export const googleAuthProvider = new GoogleAuthProvider();
 // export const auth = getAuth(firebase);
 // export const fbProvider;

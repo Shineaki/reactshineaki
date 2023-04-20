@@ -1,37 +1,47 @@
 import React from 'react';
 // import { collection } from "firebase/firestore";
-import { auth, fbProvider } from "../components/FirebaseApp";
+import { auth, googleAuthProvider } from "../components/FirebaseApp";
 // import { useFirestoreQuery } from "@react-query-firebase/firestore";
-import { useAuthUser } from "@react-query-firebase/auth";
-import { signInWithPopup } from "firebase/auth";
-import { BsFacebook } from 'react-icons/bs';
-
-function login() {
-  signInWithPopup(auth, fbProvider);  
-}
+import { signInWithPopup, signOut } from "firebase/auth";
+import { FcGoogle } from 'react-icons/fc';
+import { useStateContext } from '../contexts/ContextProvider';
 
 function Music() {
   // const ref = collection(firestore, "music_request");
   // const query = useFirestoreQuery(["music_request"], ref);
-  const fb_user = useAuthUser(["user"], auth);
+  const { user, setUser } = useStateContext();
 
-  if (fb_user.isLoading) {
-    return <div>Loading...</div>;
-  }
-
-
-  if (fb_user.data) {
-    return <div>Welcome {fb_user.data.displayName}!</div>;
+  if (user != null) {
+    return (<div>
+      <div>Welcome {user.displayName}!</div>
+      <button type="button" onClick={() => {
+          signOut(auth).then(() => {
+            setUser(null);
+          }).catch((error) => {
+            // An error happened.
+          });
+      }} className='flex items-center justify-center w-40 
+      p-3 m-2  text-center bg-gray-50 transition-colors
+      duration-200 transform border rounded-lg
+      hover:bg-gray-200 drop-shadow-md'>
+        <span className='flex items-center p-1'><FcGoogle className='mr-3'/> Kijelentkezés</span>
+      </button>
+    </div>);
   }
 
   return (<div>
     <div>Not signed in.</div>
-    <button type="button" onClick={login} className='flex items-center justify-center w-32 
-    px-4 py-5 m-2 text-sm text-center bg-blue-500 text-white transition-colors
+    <button type="button" onClick={() => {
+      signInWithPopup(auth, googleAuthProvider).then((result) => {
+        console.log(result.user);
+        setUser(result.user);
+      });
+    }} className='flex items-center justify-center w-40 
+    p-3 m-2  text-center bg-gray-50 transition-colors
     duration-200 transform border rounded-lg
-    hover:bg-blue-700'>
-      <span className='inline-flex align-items-center text-sm text-white'><BsFacebook /> Loginbutton</span>
-      </button>
+    hover:bg-gray-200 drop-shadow-md'>
+        <span className='flex items-center p-1'><FcGoogle className='mr-3'/> Bejelentkezés</span>
+    </button>
   </div>);
 
   // if (query.isLoading) {
