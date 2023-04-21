@@ -6,10 +6,38 @@ import {
   Music, Galery, Schedule, Catering, Helyszin, Fotos, Filmes, Ceremoniamester, Zenekar
 } from './pages';
 import './App.css';
+import save_the_date_image from './data/save_the_date.png';
+import { FcGoogle } from 'react-icons/fc';
 import { useStateContext } from './contexts/ContextProvider';
+import { auth, googleAuthProvider } from "./components/FirebaseApp";
+import { signInWithPopup } from "firebase/auth";
 const queryClient = new QueryClient();
 function App() {
-  const { activeMenu } = useStateContext();
+  const { user, setUser, activeMenu } = useStateContext();
+  if (user == null) {
+    return (<div>
+      <div className='flex flex-col items-center p-10'>
+        <div className='flex w-full xl:w-3/4 justify-center'>
+          <img src={save_the_date_image} className='' alt='' />
+        </div>
+        <div className='flex w-full xl:w-3/4 justify-center'>
+          <button type="button" onClick={() => {
+            signInWithPopup(auth, googleAuthProvider).then((result) => {
+              console.log(result.user);
+              setUser(result.user);
+            });
+          }} className='flex items-center justify-center w-48 
+    p-3 m-2  text-center bg-gray-50 transition-colors
+    duration-200 transform border rounded-lg
+    hover:bg-gray-200 drop-shadow-md'>
+            <span className='flex items-center p-1'><FcGoogle className='mr-3 text-2xl' /> Bejelentkezés</span>
+          </button>
+        </div>
+      </div>
+      )
+    </div>)
+  }
+
   return (
     <QueryClientProvider client={queryClient}>
       <div>
