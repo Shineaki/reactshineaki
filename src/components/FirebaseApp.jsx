@@ -16,6 +16,7 @@ export const analytics = getAnalytics(firebase);
 export const firestore = getFirestore(firebase);
 export const auth = getAuth(firebase);
 auth.languageCode = 'hu';
+// auth.setPersistence('NONE');
 
 export const googleAuthProvider = new GoogleAuthProvider();
 // export const auth = getAuth(firebase);

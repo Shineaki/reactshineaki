@@ -9,14 +9,14 @@ import { useStateContext } from '../contexts/ContextProvider';
 function Music() {
   // const ref = collection(firestore, "music_request");
   // const query = useFirestoreQuery(["music_request"], ref);
-  const { user, setUser } = useStateContext();
+  const { token, setToken } = useStateContext();
 
-  if (user != null) {
+  if (token != null) {
     return (<div>
-      <div>Welcome {user.displayName}!</div>
+      <div>Welcome {token.name}!</div>
       <button type="button" onClick={() => {
           signOut(auth).then(() => {
-            setUser(null);
+            setToken(null);
           }).catch((error) => {
             // An error happened.
           });
@@ -34,7 +34,7 @@ function Music() {
     <button type="button" onClick={() => {
       signInWithPopup(auth, googleAuthProvider).then((result) => {
         console.log(result.user);
-        setUser(result.user);
+        setToken(result.user);
       });
     }} className='flex items-center justify-center w-40 
     p-3 m-2  text-center bg-gray-50 transition-colors

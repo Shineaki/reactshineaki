@@ -11,10 +11,33 @@ import { FcGoogle } from 'react-icons/fc';
 import { useStateContext } from './contexts/ContextProvider';
 import { auth, googleAuthProvider } from "./components/FirebaseApp";
 import { signInWithPopup } from "firebase/auth";
-const queryClient = new QueryClient();
+import jwt_decode from "jwt-decode";
+import { useEffect } from 'react';
+
+
+
 function App() {
-  const { user, setUser, activeMenu } = useStateContext();
-  if (user == null) {
+  const queryClient = new QueryClient();
+  const { token, setToken, activeMenu } = useStateContext();
+  
+  useEffect(() => {
+    const tokenString = sessionStorage.getItem('token');
+    if (tokenString != null){
+      const userToken = JSON.parse(tokenString);
+      var decoded = jwt_decode(userToken);
+      setToken(decoded);
+    }
+  }, [setToken])
+
+  function storeToken(user) {
+    user.getIdToken().then((result) => {
+      sessionStorage.setItem('token', JSON.stringify(result));
+      var decoded = jwt_decode(result);
+      setToken(decoded);
+    })
+  }
+
+  if (token == null) {
     return (<div>
       <div className='flex flex-col items-center p-10'>
         <div className='flex w-full xl:w-3/4 justify-center'>
@@ -24,7 +47,7 @@ function App() {
           <button type="button" onClick={() => {
             signInWithPopup(auth, googleAuthProvider).then((result) => {
               console.log(result.user);
-              setUser(result.user);
+              storeToken(result.user);
             });
           }} className='flex items-center justify-center w-48 
     p-3 m-2  text-center bg-gray-50 transition-colors
@@ -37,6 +60,8 @@ function App() {
       )
     </div>)
   }
+
+
 
   return (
     <QueryClientProvider client={queryClient}>

@@ -4,14 +4,14 @@ const StateContext = createContext()
 
 export const ContextProvider = ({ children }) => {
     const [activeMenu, setActiveMenu] = useState(false);
-    const [user, setUser] = useState(null);
+    const [token, setToken] = useState(null);
     const [screenSize, setScreenSize] = useState(undefined);
 
     return (
         <StateContext.Provider
             value={{ 
                 activeMenu, setActiveMenu,
-                user, setUser,
+                token, setToken,
                 screenSize, setScreenSize
              }}
         >
