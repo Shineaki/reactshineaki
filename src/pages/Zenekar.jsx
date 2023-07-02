@@ -1,8 +1,14 @@
-import React from 'react'
+import React from 'react';
+import Button from '@mui/material/Button';
 
-function Zenekar(){
+function Zenekar() {
   return (
-    <div>Zenekar</div>
+
+    <div>
+      Zenekar
+      <br />
+      <Button variant="outlined">Hello World</Button>
+    </div>
   )
 }
 

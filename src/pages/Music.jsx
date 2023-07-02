@@ -5,6 +5,8 @@ import { signInWithPopup, signOut } from "firebase/auth";
 // import { useFirestoreQuery } from "@react-query-firebase/firestore";
 import { FcGoogle } from 'react-icons/fc';
 import { useStateContext } from '../contexts/ContextProvider';
+import TextField from '@mui/material/TextField';
+import { DataGrid } from '@mui/x-data-grid';
 
 function Music() {
   // const ref = collection(firestore, "music_request");
@@ -12,20 +14,21 @@ function Music() {
   const { token, setToken } = useStateContext();
 
   if (token != null) {
-    return (<div>
-      <div>Welcome {token.name}!</div>
-      <button type="button" onClick={() => {
-          signOut(auth).then(() => {
-            setToken(null);
-          }).catch((error) => {
-            // An error happened.
-          });
+    return (<div className='flex flex-col justify-center items-center min-h-screen'>
+      <div>Szia {token.name}!</div>
+      <TextField id="outlined-basic" label="Youtube Link" variant="outlined" style={{ margin: 15 }} />
+      {/* <button type="button" onClick={() => {
+        signOut(auth).then(() => {
+          setToken(null);
+        }).catch((error) => {
+          // An error happened.
+        });
       }} className='flex items-center justify-center w-40 
       p-3 m-2  text-center bg-gray-50 transition-colors
       duration-200 transform border rounded-lg
       hover:bg-gray-200 drop-shadow-md'>
-        <span className='flex items-center p-1'><FcGoogle className='mr-3'/> Kijelentkezés</span>
-      </button>
+        <span className='flex items-center p-1'><FcGoogle className='mr-3' /> Kijelentkezés</span>
+      </button> */}
     </div>);
   }
 
@@ -40,7 +43,7 @@ function Music() {
     p-3 m-2  text-center bg-gray-50 transition-colors
     duration-200 transform border rounded-lg
     hover:bg-gray-200 drop-shadow-md'>
-        <span className='flex items-center p-1'><FcGoogle className='mr-3'/> Bejelentkezés</span>
+      <span className='flex items-center p-1'><FcGoogle className='mr-3' /> Bejelentkezés</span>
     </button>
   </div>);
 
