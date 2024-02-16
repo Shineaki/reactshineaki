@@ -1,12 +1,7 @@
 export { default as Home } from './Home';
 export { default as Galery } from './Galery';
-export { default as BucsuInfo } from './BucsuInfo';
 export { default as SaveTheDate } from './SaveTheDate';
 export { default as Schedule } from './Schedule';
 export { default as Music } from './Music';
-export { default as Catering } from './Catering';
-export { default as Zenekar } from './Zenekar';
-export { default as Filmes } from './Filmes';
-export { default as Fotos } from './Fotos';
-export { default as Helyszin } from './Helyszin';
-export { default as Ceremoniamester } from './Ceremoniamester';
+export { default as Responses } from './Responses';
+export { default as Service } from './Service';

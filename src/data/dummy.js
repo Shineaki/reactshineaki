@@ -1,14 +1,14 @@
 import React from 'react';
 import { FiBarChart } from 'react-icons/fi';
-import { BiDrink, BiHomeHeart } from 'react-icons/bi';
-import { BsBoxSeam, BsFillCameraFill, BsFillCameraReelsFill } from 'react-icons/bs';
+import { BiDrink } from 'react-icons/bi';
+import { BsBoxSeam } from 'react-icons/bs';
 import { MdOutlineSupervisorAccount } from 'react-icons/md';
 import { HiOutlineRefresh, HiOutlineInformationCircle } from 'react-icons/hi';
 import { GrLocation, GrGallery, GrSchedulePlay } from 'react-icons/gr';
-import { GiMusicalNotes } from 'react-icons/gi';
 import { ImFileMusic } from 'react-icons/im';
-import { IoMdBowtie } from 'react-icons/io';
+import { BsEnvelopeOpenHeart } from "react-icons/bs";
 import { AiOutlineHeart } from 'react-icons/ai';
+import { GiWoodenChair } from "react-icons/gi";
 
 export const links = [
   {
@@ -17,70 +17,40 @@ export const links = [
       {
         name: '#SaveTheDate',
         url: 'savethedate',
-        icon: <AiOutlineHeart />,
+        icon: <AiOutlineHeart />
       },
       {
         name: 'Menetrend',
         url: 'schedule',
-        icon: <GrSchedulePlay />,
+        icon: <GrSchedulePlay />
+      },
+      {
+        name: 'Visszajelzés',
+        url: 'response',
+        icon: <BsEnvelopeOpenHeart />
+      },
+      {
+        name: 'Ülésrend',
+        url: 'seating',
+        icon: <GiWoodenChair />
+      },
+      {
+        name: 'Szolgáltatók',
+        url: 'service',
+        icon: <BiDrink />
       },
       {
         name: 'Zenedoboz',
         url: 'music',
-        icon: <ImFileMusic />,
+        icon: <ImFileMusic />
       },
       {
         name: 'Galéria',
         url: 'galery',
-        icon: <GrGallery />,
-      },
-    ],
-  },
-  {
-    title: 'Szolgáltatók',
-    links: [
-      {
-        name: 'Catering',
-        url: 'catering',
-        icon: <BiDrink />,
-      },
-      {
-        name: 'Ceremóniamester',
-        url: 'ceremoniamester',
-        icon: <IoMdBowtie />,
-      },
-      {
-        name: 'Filmes',
-        url: 'filmes',
-        icon: <BsFillCameraReelsFill />,
-      },
-      {
-        name: 'Fotós',
-        url: 'fotos',
-        icon: <BsFillCameraFill />,
-      },
-      {
-        name: 'Helyszín',
-        url: 'helyszin',
-        icon: <BiHomeHeart />,
-      },
-      {
-        name: 'Zenekar',
-        url: 'zenekar',
-        icon: <GiMusicalNotes />,
+        icon: <GrGallery />
       }
     ],
-  },
-  {
-    title: 'Legény és Lánybúcsú',
-    links: [
-      {
-        name: 'Információ',
-        url: 'bucsu',
-        icon: <HiOutlineInformationCircle />,
-      }
-    ],
-  },
+  }
 ];
 
 

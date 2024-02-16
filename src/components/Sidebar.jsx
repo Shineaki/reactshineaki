@@ -22,7 +22,7 @@ const Sidebar = () => {
       {activeMenu && (
         <>
           <div>
-            <Link to="/"  onClick={handleCloseSideBar} className="items-center gap-3 ml-5 mt-6 flex text-xl font-extrabold tracking-tight text-slate-900">
+            <Link to="/" onClick={handleCloseSideBar} className="items-center gap-3 ml-5 mt-6 flex text-xl font-extrabold tracking-tight text-slate-900">
               <GiSelfLove /><span>Domi + Ádám</span>
             </Link>
           </div>
@@ -51,8 +51,8 @@ const Sidebar = () => {
             ))}
           </div>
         </>)}
-        </div>
-      )
-      }
+    </div>
+  )
+}
 
-      export default Sidebar
+export default Sidebar

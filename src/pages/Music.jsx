@@ -5,8 +5,8 @@ import { signInWithPopup, signOut } from "firebase/auth";
 // import { useFirestoreQuery } from "@react-query-firebase/firestore";
 import { FcGoogle } from 'react-icons/fc';
 import { useStateContext } from '../contexts/ContextProvider';
-import TextField from '@mui/material/TextField';
-import { DataGrid } from '@mui/x-data-grid';
+// import TextField from '@mui/material/TextField';
+// import { DataGrid } from '@mui/x-data-grid';
 
 function Music() {
   // const ref = collection(firestore, "music_request");
@@ -16,7 +16,7 @@ function Music() {
   if (token != null) {
     return (<div className='flex flex-col justify-center items-center min-h-screen'>
       <div>Szia {token.name}!</div>
-      <TextField id="outlined-basic" label="Youtube Link" variant="outlined" style={{ margin: 15 }} />
+      {/* <TextField id="outlined-basic" label="Youtube Link" variant="outlined" style={{ margin: 15 }} /> */}
       {/* <button type="button" onClick={() => {
         signOut(auth).then(() => {
           setToken(null);

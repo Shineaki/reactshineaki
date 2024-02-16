@@ -2,8 +2,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import { Navbar, Sidebar } from './components';
 import {
-  BucsuInfo, SaveTheDate,
-  Music, Galery, Schedule, Catering, Helyszin, Fotos, Filmes, Ceremoniamester, Zenekar
+  SaveTheDate,
+  Music, Galery, Schedule, Responses, Service
 } from './pages';
 import './App.css';
 import save_the_date_image from './data/save_the_date.png';
@@ -13,6 +13,7 @@ import { auth, googleAuthProvider } from "./components/FirebaseApp";
 import { signInWithPopup } from "firebase/auth";
 import jwt_decode from "jwt-decode";
 import { useEffect } from 'react';
+import Seating from './pages/Seating';
 
 
 
@@ -57,7 +58,6 @@ function App() {
           </button>
         </div>
       </div>
-      )
     </div>)
   }
 
@@ -81,17 +81,12 @@ function App() {
                   <Route path="/" element={<SaveTheDate />} />
                   <Route path="/savethedate" element={<SaveTheDate />} />
                   <Route path="/schedule" element={<Schedule />} />
+                  <Route path="/response" element={<Responses />} />
+                  <Route path="/seating" element={<Seating />} />
                   <Route path="/music" element={<Music />} />
                   <Route path="/galery" element={<Galery />} />
 
-                  <Route path="/catering" element={<Catering />} />
-                  <Route path="/ceremoniamester" element={<Ceremoniamester />} />
-                  <Route path="/filmes" element={<Filmes />} />
-                  <Route path="/fotos" element={<Fotos />} />
-                  <Route path="/helyszin" element={<Helyszin />} />
-                  <Route path="/zenekar" element={<Zenekar />} />
-
-                  <Route path="/bucsu" element={<BucsuInfo />} />
+                  <Route path="/service" element={<Service />} />
                   {/* Eskuvo */}
                 </Routes>
               </div>
