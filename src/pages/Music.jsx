@@ -1,7 +1,7 @@
 import React from 'react';
 // import { collection } from "firebase/firestore";
 import { auth, googleAuthProvider } from "../components/FirebaseApp";
-import { signInWithPopup, signOut } from "firebase/auth";
+import { signInWithPopup } from "firebase/auth";
 // import { useFirestoreQuery } from "@react-query-firebase/firestore";
 import { FcGoogle } from 'react-icons/fc';
 import { useStateContext } from '../contexts/ContextProvider';

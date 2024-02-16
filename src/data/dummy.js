@@ -3,7 +3,7 @@ import { FiBarChart } from 'react-icons/fi';
 import { BiDrink } from 'react-icons/bi';
 import { BsBoxSeam } from 'react-icons/bs';
 import { MdOutlineSupervisorAccount } from 'react-icons/md';
-import { HiOutlineRefresh, HiOutlineInformationCircle } from 'react-icons/hi';
+import { HiOutlineRefresh } from 'react-icons/hi';
 import { GrLocation, GrGallery, GrSchedulePlay } from 'react-icons/gr';
 import { ImFileMusic } from 'react-icons/im';
 import { BsEnvelopeOpenHeart } from "react-icons/bs";
