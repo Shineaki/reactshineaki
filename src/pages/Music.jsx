@@ -33,8 +33,8 @@ function Music() {
   }
 
   return (<div>
-    <div>Not signed in.</div>
-    <button type="button" onClick={() => {
+    <div>Zenedoboz</div>
+    {/* <button type="button" onClick={() => {
       signInWithPopup(auth, googleAuthProvider).then((result) => {
         console.log(result.user);
         setToken(result.user);
@@ -44,7 +44,7 @@ function Music() {
     duration-200 transform border rounded-lg
     hover:bg-gray-200 drop-shadow-md'>
       <span className='flex items-center p-1'><FcGoogle className='mr-3' /> Bejelentkezés</span>
-    </button>
+    </button> */}
   </div>);
 
   // if (query.isLoading) {
