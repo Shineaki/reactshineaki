@@ -1,21 +1,21 @@
 import React from 'react';
 // import { collection } from "firebase/firestore";
-import { auth, googleAuthProvider } from "../components/FirebaseApp";
-import { signInWithPopup } from "firebase/auth";
+// import { auth, googleAuthProvider } from "../components/FirebaseApp";
+// import { signInWithPopup } from "firebase/auth";
 // import { useFirestoreQuery } from "@react-query-firebase/firestore";
-import { FcGoogle } from 'react-icons/fc';
-import { useStateContext } from '../contexts/ContextProvider';
+// import { FcGoogle } from 'react-icons/fc';
+// import { useStateContext } from '../contexts/ContextProvider';
 // import TextField from '@mui/material/TextField';
 // import { DataGrid } from '@mui/x-data-grid';
 
 function Music() {
   // const ref = collection(firestore, "music_request");
   // const query = useFirestoreQuery(["music_request"], ref);
-  const { token, setToken } = useStateContext();
+  // const { token } = useStateContext();
 
-  if (token != null) {
-    return (<div className='flex flex-col justify-center items-center min-h-screen'>
-      <div>Szia {token.name}!</div>
+  // if (token != null) {
+  //   return (<div className='flex flex-col justify-center items-center min-h-screen'>
+  //     <div>Szia {token.name}!</div>
       {/* <TextField id="outlined-basic" label="Youtube Link" variant="outlined" style={{ margin: 15 }} /> */}
       {/* <button type="button" onClick={() => {
         signOut(auth).then(() => {
@@ -29,8 +29,8 @@ function Music() {
       hover:bg-gray-200 drop-shadow-md'>
         <span className='flex items-center p-1'><FcGoogle className='mr-3' /> Kijelentkezés</span>
       </button> */}
-    </div>);
-  }
+    {/* </div>);
+  } */}
 
   return (<div>
     <div>Zenedoboz</div>
