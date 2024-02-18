@@ -7,7 +7,7 @@ function SaveTheDate() {
   return (
     <div className='flex flex-col items-center'>
       <div className='flex w-full justify-center mb-5'>
-        <img src={save_the_date_image} className='w-3/5 md:w-3/5 lg:w-1/2 xl:w-1/3' />
+        <img src={save_the_date_image} className='w-3/5 md:w-3/5 lg:w-1/2 xl:w-1/3' alt=''/>
       </div>
       <div className='flex flex-col w-full md:w-2/3 text-center p-5 montserrat text-lg'>
         <div className='pb-3 font-bold'>
