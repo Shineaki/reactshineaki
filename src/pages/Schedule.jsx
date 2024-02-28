@@ -2,7 +2,6 @@ import React from 'react'
 import { useStateContext } from '../contexts/ContextProvider';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import { AiOutlineMenu } from 'react-icons/ai';
 import { BiDrink } from "react-icons/bi";
 import { LuPartyPopper } from "react-icons/lu";
 import { HiOutlineHeart } from "react-icons/hi";
