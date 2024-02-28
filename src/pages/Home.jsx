@@ -1,9 +1,6 @@
 import React from 'react';
 import { Button } from '../components';
 import { earningData } from '../data/dummy';
-// import { useStateContext } from '../contexts/ContextProvider';
-// import { useAnalyticsLogEvent } from "@react-query-firebase/analytics";
-// import { analytics } from "../components/FirebaseApp";
 
 function Home(){
   return (
