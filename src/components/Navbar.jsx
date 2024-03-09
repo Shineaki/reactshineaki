@@ -34,7 +34,7 @@ function Navbar(){
     <div className='flex justify-start ml-2 mt-2'>
     <NavButton
       customFunc={() => setActiveMenu(!activeMenu)}
-      color="blue"
+      color="black"
       icon={<AiOutlineMenu />}
     />
   </div>) : (<></>))

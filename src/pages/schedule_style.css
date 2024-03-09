@@ -1,0 +1,43 @@
+html, body {
+    background-color: #f4eee4;
+  }
+  
+  .vertical-timeline-element-content {
+    color: black;
+  }
+  
+  .vertical-timeline-element--arrival .vertical-timeline-element-content {
+    border-top: 3px solid #E37383;
+  }
+  
+  .vertical-timeline-element--ceremony .vertical-timeline-element-content {
+    border-top: 3px solid #FFB19A;
+  }
+    
+  .vertical-timeline-element--photo .vertical-timeline-element-content {
+    border-top: 3px solid #FFF394;
+  }
+  
+  .vertical-timeline-element--dinner .vertical-timeline-element-content {
+    border-top: 3px solid #C1E1C1;
+  }
+  
+  .vertical-timeline-element--dance .vertical-timeline-element-content {
+    border-top: 3px solid #93C572;
+  }
+  
+  .vertical-timeline-element--drink .vertical-timeline-element-content {
+    border-top: 3px solid #b0c4de;
+  }
+  
+  .vertical-timeline-element--cake .vertical-timeline-element-content {
+    border-top: 3px solid #6495ED;
+  }
+  
+  .vertical-timeline-element--midnight .vertical-timeline-element-content {
+    border-top: 3px solid #CBC3E3;
+  }
+  
+  .vertical-timeline-element-date {
+    color: #333;
+  }
