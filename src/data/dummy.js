@@ -30,6 +30,11 @@ export const links = [
         icon: <BsEnvelopeOpenHeart />
       },
       {
+        name: 'Zenedoboz',
+        url: 'music',
+        icon: <ImFileMusic />
+      },
+      {
         name: 'Ülésrend',
         url: 'seating',
         icon: <GiWoodenChair />
@@ -38,11 +43,6 @@ export const links = [
         name: 'Szolgáltatók',
         url: 'service',
         icon: <BiDrink />
-      },
-      {
-        name: 'Zenedoboz',
-        url: 'music',
-        icon: <ImFileMusic />
       },
       {
         name: 'Galéria',
