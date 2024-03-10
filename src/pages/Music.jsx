@@ -20,6 +20,7 @@ function Music() {
       tmp_music_list.push({
         title: songData.title,
         thumbnail: songData.thumbnail,
+        id: value.id
       });
       elements_processed++;
       console.log(elements_processed + " - " + querySnapshot.docs.length);
@@ -59,12 +60,13 @@ function Music() {
       getDoc(docRef).then((docSnap) => {
         if (docSnap.exists()) {
           setErrorMessage("Ezt a zenét már valaki hozzáadta! 😀");
-    } else {
+        } else {
           setDoc(doc(firestore, "music_request", video_id), {
             title: result.data.items[0].snippet.title,
             thumbnail: result.data.items[0].snippet.thumbnails.default.url,
             timestamp: Date.now()
           }).then(() => {
+            setErrorMessage(null);
             queryData();
           });
         }
@@ -95,13 +97,13 @@ function Music() {
           {errorMessage}
         </div>
       )}
-      <button className='w-4/5 xl:w-1/3  border rounded-xl p-2 mt-2 border-logo-font/70 bg-wed-icon-font/70 shadow-md' onClick={() => addData()}>Hozzáadás!</button>
-      <div className='grid grid-cols-1 xl:grid-cols-3  m-10'>
+      <button className='w-4/5 xl:w-1/3  border rounded-xl p-2 mt-2 border-logo-font/70 bg-wed-icon-font/70 shadow-md text-l text-white' onClick={() => addData()}>Hozzáadás!</button>
+      <div className='grid grid-cols-1 xl:grid-cols-3 gap-5 m-5'>
         {musicList.map((value, index) => (
-          <div key={index} className='flex items-center gap-3 my-3'>
-            <img src={value.thumbnail} alt={value.title} className='shadow-lg'/>
+          <a key={index} className='flex items-center gap-3 cursor-pointer border rounded-tr-xl rounded-br-xl border-logo-font/70' href={'https://www.youtube.com/watch?v=' + value.id}>
+            <img src={value.thumbnail} alt={value.title} className='shadow-lg' />
             <div>{value.title}</div>
-          </div>
+          </a>
         ))
         }
       </div>
