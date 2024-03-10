@@ -14,10 +14,10 @@ function SaveTheDate() {
           Kedves Családunk és Barátaink!
         </div>
         <div className='pb-3'>
-          Örömmel tudjatjuk veletek, hogy (újra) kimondjuk a boldogító igent. Ezen apropóból szeretettel várunk benneteket 2024. április 20-án a bogádi Gálffy Birtokon tartandó esküvőnkre.
+          Örömmel tudjatjuk veletek, hogy (újra) kimondjuk a boldogító igent.<br/>Ezen apropóból szeretettel várunk benneteket <strong>2024. április 20-án a bogádi Gálffy Birtokon</strong> tartandó esküvőnkre.
         </div>
         <div className='pb-3'>
-          Részvételi szándékotokat és speciális étkezési igényeteket kérjük, hogy a "Visszejelzés" menüpont alatt jelezzétek!
+          Részvételi szándékotokat és speciális étkezési igényeteket kérjük, hogy a "Visszejelzés" menüpont alatt jelezzétek, legkésőbb <b>március 24 éjfélig</b>!
         </div>
         <div className='mb-5'>
           Alig várjuk, hogy együtt ünnepeljünk Veletek! 🥰

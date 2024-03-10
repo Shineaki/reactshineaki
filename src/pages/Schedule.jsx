@@ -59,7 +59,7 @@ function Schedule() {
         icon={<IoFastFoodOutline />}
       >
         <h3 className="vertical-timeline-element-title font-bold">Ünnepi Vacsora</h3>
-        <h4 className="vertical-timeline-element-subtitle">Koccintás, beszédek és lakoma</h4>
+        <h4 className="vertical-timeline-element-subtitle">Pezsgős koccintás, beszédek és lakoma</h4>
       </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--dance"
@@ -69,7 +69,7 @@ function Schedule() {
         icon={<LuPartyPopper />}
       >
         <h3 className="vertical-timeline-element-title font-bold">Nyitótánc</h3>
-        <h4 className="vertical-timeline-element-subtitle">Nyitó- majd szülőtánc, aztán mulatási</h4>
+        <h4 className="vertical-timeline-element-subtitle">Nyitó- majd szülőtánc, aztán induljon a banzáj!</h4>
       </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--drink"
@@ -89,7 +89,7 @@ function Schedule() {
         icon={<LuCakeSlice />}
       >
         <h3 className="vertical-timeline-element-title font-bold">Menyasszonytánc és Esküvői Torta</h3>
-        <h4 className="vertical-timeline-element-subtitle">Ajándék átadás, menyasszony megpörgetés, aztán egy szelet torta</h4>
+        <h4 className="vertical-timeline-element-subtitle">Borítékba rejtett ajándék átadás, menyasszony megpörgetés, aztán egy mennyei szelet torta</h4>
       </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--midnight"
@@ -109,7 +109,7 @@ function Schedule() {
         icon={<MdOutlineSportsGymnastics />}
       >
         <h3 className="vertical-timeline-element-title font-bold">Mulatás vége</h3>
-        <h4 className="vertical-timeline-element-subtitle">Köszönjük, hogy velünk ünnepeltél! :)</h4>
+        <h4 className="vertical-timeline-element-subtitle">Köszönjük, hogy velünk ünnepeltetek! 💖</h4>
       </VerticalTimelineElement>
     </VerticalTimeline>
   )
