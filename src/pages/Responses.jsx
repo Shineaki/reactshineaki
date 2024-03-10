@@ -85,7 +85,7 @@ function Responses() {
         Násznép - Részvételi Visszajelzés 📝
       </div>
       <form onSubmit={(ev) => submit_form(ev)}>
-        <div className='border-gray-200 border rounded-xl p-5'>
+        <div className='border-logo-font/70 border rounded-xl p-5'>
           <div className='text-xl'>
             1. Esküvői kapcsolattartó személyes adatai
           </div>
@@ -96,7 +96,7 @@ function Responses() {
             <div className='text-sm text-gray-600'>
               Teljes Neved
             </div>
-            <input type='text' className='w-full border rounded-md p-2 my-3' maxLength={50} placeholder='Kovács Béla' required onChange={(ev) => setFullName(ev.target.value)} />
+            <input type='text' className='w-full border rounded-md p-2 my-3' maxLength={50} placeholder='Nagy Gergely' required onChange={(ev) => setFullName(ev.target.value)} />
           </div>
           <div>
             <div className='text-sm text-gray-600'>
@@ -106,18 +106,18 @@ function Responses() {
           </div>
           <div>
             <div className='text-sm text-gray-600'>
-              Emailcímed
+              Email címed
             </div>
             <input type='email' className='w-full border rounded-md p-2 my-3' maxLength={50} placeholder='pelda@gmail.com' required onChange={(ev) => setEmail(ev.target.value)} />
           </div>
         </div>
 
-        <div className='border-gray-200 border rounded-xl p-5 mt-5'>
+        <div className='border-logo-font/70 border rounded-xl p-5 mt-5'>
           <div className='text-xl'>
             2. Vendégek
           </div>
           <div className='text-gray-500 pb-5 pt-3 text-justify'>
-            Kérjük add meg a résztvevők számát, akiket képviselsz.
+            Kérjük add meg a résztvevő vendégek számát, akiket képviselsz!
           </div>
           <div>
             <div className='text-sm text-gray-600'>
@@ -156,7 +156,7 @@ function Responses() {
               <option value={10}>10</option>
             </select>
             <div className='text-sm text-gray-600 flex'>
-              Ha gyerekekkel érkeztek, kérlek jelezzétek itt, hogy hány etetőszékre van szükségetek!
+              Gyerekekkel érkeztek? Kérlek jelezzétek, hogy hány etetőszékre van szükségetek!
             </div>
             <select className='w-full border rounded-md p-2 my-3' onChange={ev => setKidSeat(ev.target.value)}>
               <option value={0}>0</option>
@@ -165,7 +165,7 @@ function Responses() {
               <option value={3}>3</option>
             </select>
             <div className='flex text-sm text-gray-600 mb-3'>
-              Kérlek add meg a vendégek teljes nevét - és ha van, akkor a speciális étrendet is, amire a cateringnek figyelnie kell <br /> (magadat is sorold fel itt, illetve a 12 év alatti gyerekek esetében zárójelben az életkort is add meg!)
+              Kérlek add meg a vendégek teljes nevét és esetleges speciális étrendjét a catering számára!  <br /> (Magadat is sorold fel! A 12 év alatti gyerekek esetében az életkort is add meg zárójelben!)
             </div>
             <div className='flex flex-col'>
               {
@@ -174,22 +174,22 @@ function Responses() {
                     <input ref={element => nameRef.current[index] = element} className='flex border rounded-md p-2 my-3' placeholder={'Vendég név ' + (index + 1)} onChange={ev => updateGuestArray(ev, index)} required />
                     <div className='flex flex-wrap justify-center text-sm gap-3'>
                       <div>
-                        <input type='checkbox' ref={element => foodRef.current[index * 6] = element} onChange={ev => updateFoodArray(ev, index, 'none')} /> Nincs speciális étrend
+                        <input type='checkbox' className='accent-wed-icon-font/50 w-4 h-4' ref={element => foodRef.current[index * 6] = element} onChange={ev => updateFoodArray(ev, index, 'none')} /> Nincs speciális étrend
                       </div>
                       <div>
-                        <input type='checkbox' ref={element => foodRef.current[index * 6 + 1] = element} onChange={ev => updateFoodArray(ev, index, 'sugarFree')} /> Cukormentes
+                        <input type='checkbox' className='accent-wed-icon-font/50 w-4 h-4' ref={element => foodRef.current[index * 6 + 1] = element} onChange={ev => updateFoodArray(ev, index, 'sugarFree')} /> Cukormentes
                       </div>
                       <div>
-                        <input type='checkbox' ref={element => foodRef.current[index * 6 + 2] = element} onChange={ev => updateFoodArray(ev, index, 'glutenFree')} /> Gluténmentes
+                        <input type='checkbox' className='accent-wed-icon-font/50 w-4 h-4' ref={element => foodRef.current[index * 6 + 2] = element} onChange={ev => updateFoodArray(ev, index, 'glutenFree')} /> Gluténmentes
                       </div>
                       <div>
-                        <input type='checkbox' ref={element => foodRef.current[index * 6 + 3] = element} onChange={ev => updateFoodArray(ev, index, 'milkFree')} /> Tejmentes
+                        <input type='checkbox' className='accent-wed-icon-font/50 w-4 h-4' ref={element => foodRef.current[index * 6 + 3] = element} onChange={ev => updateFoodArray(ev, index, 'milkFree')} /> Tejmentes
                       </div>
                       <div>
-                        <input type='checkbox' ref={element => foodRef.current[index * 6 + 4] = element} onChange={ev => updateFoodArray(ev, index, 'vegetarian')} /> Vegetáriánus
+                        <input type='checkbox' className='accent-wed-icon-font/50 w-4 h-4' ref={element => foodRef.current[index * 6 + 4] = element} onChange={ev => updateFoodArray(ev, index, 'vegetarian')} /> Vegetáriánus
                       </div>
                       <div>
-                        <input type='checkbox' ref={element => foodRef.current[index * 6 + 5] = element} onChange={ev => updateFoodArray(ev, index, 'vegan')} /> Vegán
+                        <input type='checkbox' className='accent-wed-icon-font/50 w-4 h-4' ref={element => foodRef.current[index * 6 + 5] = element} onChange={ev => updateFoodArray(ev, index, 'vegan')} /> Vegán
                       </div>
                     </div>
                   </div>
@@ -199,7 +199,9 @@ function Responses() {
           </div>
         </div>
         <div className='flex flex-row justify-center my-5'>
-          <button type='submit' className='w-full border rounded-md p-3 border-blue-300 bg-blue-200'>Beküldés</button>
+          <button type='submit' className='w-full border rounded-md p-3 border-logo-font/70 bg-wed-icon-font/70'>
+            <div className='text-l text-white'>BEKÜLDÉS</div>
+          </button>
         </div>
       </form>
     </div>

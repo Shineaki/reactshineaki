@@ -89,7 +89,7 @@ function Schedule() {
         icon={<LuCakeSlice />}
       >
         <h3 className="vertical-timeline-element-title font-bold">Menyasszonytánc és Esküvői Torta</h3>
-        <h4 className="vertical-timeline-element-subtitle">Ajándék átadás, menyasszony megpörgetés, aztán egy szelet torta.</h4>
+        <h4 className="vertical-timeline-element-subtitle">Ajándék átadás, menyasszony megpörgetés, aztán egy szelet torta</h4>
       </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--midnight"
@@ -107,7 +107,6 @@ function Schedule() {
         date="04:00"
         iconStyle={{ background: '#D8BFD8', color: '#fff' }}
         icon={<MdOutlineSportsGymnastics />}
-        shadowSize="small"
       >
         <h3 className="vertical-timeline-element-title font-bold">Mulatás vége</h3>
         <h4 className="vertical-timeline-element-subtitle">Köszönjük, hogy velünk ünnepeltél! :)</h4>

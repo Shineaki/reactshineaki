@@ -11,17 +11,24 @@ module.exports = {
           14: '14px',
         },
         backgroundColor: {
-          'main-bg': '#FAFBFB',
-          'main-dark-bg': '#20232A',
-          'secondary-dark-bg': '#33373E',
-          'light-gray': '#F7F7F7',
+          'main-bg': '#D8D4D5',
+          'main-dark-bg': '#6E7271',
+          'secondary-dark-bg': '#384D48',
+          'light-gray': '#E2E2E2',
           'half-transparent': 'rgba(0, 0, 0, 0.5)',
+          'wed-icon-font': '#605a4f',
+          'light-blue': '#A9C2F0'
         },
         borderWidth: {
           1: '1px',
         },
         borderColor: {
           color: 'rgba(0, 0, 0, 0.1)',
+          'light-blue': '#A9C2F0',
+          'logo-font': '#605a4f'
+        },
+        colors: {
+          'wed-icon-font': '#605a4f'
         },
         width: {
           400: '400px',

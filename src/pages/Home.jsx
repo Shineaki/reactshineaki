@@ -16,7 +16,7 @@ function Home(){
           <div className="mt-6">
             <Button
               color="white"
-              bgColor="blue"
+              bgColor="#ACAD94"
               text="Download"
               borderRadius="10px" />
           </div>

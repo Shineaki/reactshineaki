@@ -20,11 +20,11 @@ function App() {
       <div>
         <BrowserRouter>
           <div className='flex relative'>
-            <div className={`fixed sidebar bg-white ${activeMenu ? 'w-64' : 'w-0'}`}>
+            <div className={`fixed sidebar bg-wed-icon-font/70 ${activeMenu ? 'w-64' : 'w-0'}`}>
               <Sidebar />
             </div>
             <div className={`bg-main-bg min-h-screen w-full ${activeMenu ? 'md:ml-64' : 'flex-2'}`}>
-              <div className='bg-main-bg navbar w-full'>
+              <div className='bg-wed-icon-font navbar w-full'>
                 <Navbar />
               </div>
               <div>
