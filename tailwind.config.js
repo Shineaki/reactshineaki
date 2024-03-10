@@ -17,6 +17,7 @@ module.exports = {
           'light-gray': '#E2E2E2',
           'half-transparent': 'rgba(0, 0, 0, 0.5)',
           'wed-icon-font': '#605a4f',
+          'sidebar-color': '#8c867b',
           'light-blue': '#A9C2F0'
         },
         borderWidth: {

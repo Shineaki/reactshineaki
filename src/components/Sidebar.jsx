@@ -9,7 +9,7 @@ const Sidebar = () => {
   const { activeMenu, setActiveMenu } = useStateContext();
   const { screenSize } = useStateContext();
   const activeLink = 'flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-gray-700 m-2 bg-wed-icon-font/50 text-white';
-  const normalLink = 'flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-gray-700 hover:bg-wed-icon-font/20 m-2  text-white';
+  const normalLink = 'flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-gray-700 hover:bg-wed-icon-font/20 m-2 text-white';
 
   const handleCloseSideBar = () => {
     if (activeMenu !== undefined && screenSize <= 900) {
