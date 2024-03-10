@@ -100,7 +100,7 @@ function Music() {
       <button className='w-4/5 xl:w-1/3  border rounded-xl p-2 mt-2 border-logo-font/70 bg-wed-icon-font/70 shadow-md text-l text-white' onClick={() => addData()}>Hozzáadás!</button>
       <div className='grid grid-cols-1 xl:grid-cols-3 gap-5 m-5'>
         {musicList.map((value, index) => (
-          <a key={index} className='flex items-center gap-3 cursor-pointer border rounded-tr-xl rounded-br-xl border-logo-font/70' href={'https://www.youtube.com/watch?v=' + value.id}>
+          <a key={index} className='flex items-center gap-3 cursor-pointer border border-logo-font/70' href={'https://www.youtube.com/watch?v=' + value.id}>
             <img src={value.thumbnail} alt={value.title} className='shadow-lg' />
             <div>{value.title}</div>
           </a>
