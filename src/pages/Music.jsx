@@ -75,14 +75,6 @@ function Music() {
     })
   }
 
-  if (musicList.length === 0) {
-    return (
-      <div>
-        Fetching Data ...
-      </div>
-    )
-  }
-
   return (
     <div className='flex flex-col my-10 items-center w-full'>
       <div className='text-2xl font-bold'>
