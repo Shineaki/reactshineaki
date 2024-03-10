@@ -88,7 +88,7 @@ function Music() {
       <div className='text-2xl font-bold'>
         Zenedoboz
       </div>
-      <div className='my-2 text-center'>
+      <div className='m-2 text-center'>
         Dobálj be ide zenéket (Youtube linket!) amikre szívesen ropnád éjfél után 🕺💃
       </div>
       <input ref={textRef} placeholder='https://www.youtube.com/watch?v=9HDEHj2yzew' className='w-4/5 xl:w-1/3 px-3 py-1 border rounded-xl my-2' />
