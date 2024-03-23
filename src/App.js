@@ -3,7 +3,7 @@ import { QueryClient, QueryClientProvider } from 'react-query';
 import { Navbar, Sidebar } from './components';
 import {
   SaveTheDate,
-  Music, Galery, Schedule, Responses, Service
+  Music, Galery, Schedule, Responses, ResponsesDominak, Service
 } from './pages';
 import './App.css';
 import { useStateContext } from './contexts/ContextProvider';
@@ -34,6 +34,7 @@ function App() {
                   <Route path="/savethedate" element={<SaveTheDate />} />
                   <Route path="/schedule" element={<Schedule />} />
                   <Route path="/response" element={<Responses />} />
+                  <Route path="/responsedominak" element={<ResponsesDominak />} />
                   <Route path="/seating" element={<Seating />} />
                   <Route path="/music" element={<Music />} />
                   <Route path="/galery" element={<Galery />} />

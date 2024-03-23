@@ -30,6 +30,7 @@ function Responses() {
         mobile: mobileNumber,
         emailAddress: email,
         numOfKidSeats: kidSeat,
+        family: "",
         guests: guests.map((value, index) => {
           return {
             guestName: value,
