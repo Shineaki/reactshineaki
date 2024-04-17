@@ -40,8 +40,8 @@ export const links = [
         icon: <GiWoodenChair />
       },
       {
-        name: 'Szolgáltatók',
-        url: 'service',
+        name: 'Menü',
+        url: 'menu',
         icon: <BiDrink />
       },
       {

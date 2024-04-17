@@ -3,7 +3,7 @@ import { QueryClient, QueryClientProvider } from 'react-query';
 import { Navbar, Sidebar } from './components';
 import {
   SaveTheDate,
-  Music, Gallery, Schedule, Responses, ResponsesDominak, Service
+  Music, Gallery, Schedule, Responses, ResponsesDominak, Menu
 } from './pages';
 import './App.css';
 import { useStateContext } from './contexts/ContextProvider';
@@ -38,8 +38,7 @@ function App() {
                   <Route path="/seating" element={<Seating />} />
                   <Route path="/music" element={<Music />} />
                   <Route path="/gallery" element={<Gallery />} />
-
-                  <Route path="/service" element={<Service />} />
+                  <Route path="/menu" element={<Menu />} />
                   {/* Eskuvo */}
                 </Routes>
               </div>
