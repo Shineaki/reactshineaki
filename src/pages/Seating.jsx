@@ -47,7 +47,7 @@ function Seating() {
             <tr><td>Grósz Olivér 	</td><td>6</td></tr>
             <tr><td>Grósz Szófia	</td><td>6</td></tr>
             <tr><td>Grósz Tamás	</td><td>6</td></tr>
-            <tr><td>Grósz-Láng Eveling	</td><td>6</td></tr>
+            <tr><td>Grósz-Láng Evelin	</td><td>6</td></tr>
             <tr><td>Gyurász Marianna	</td><td>11</td></tr>
             <tr><td>Halmos Ádám	</td><td>Főasztal</td></tr>
             <tr><td>Halmos Attila	</td><td>1</td></tr>
