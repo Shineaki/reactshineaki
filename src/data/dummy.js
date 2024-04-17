@@ -46,7 +46,7 @@ export const links = [
       },
       {
         name: 'Galéria',
-        url: 'galery',
+        url: 'gallery',
         icon: <GrGallery />
       }
     ],

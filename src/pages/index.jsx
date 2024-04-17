@@ -1,4 +1,4 @@
-export { default as Galery } from './Galery';
+export { default as Gallery } from './Gallery';
 export { default as SaveTheDate } from './SaveTheDate';
 export { default as Schedule } from './Schedule';
 export { default as Music } from './Music';
