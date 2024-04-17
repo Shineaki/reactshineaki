@@ -6,8 +6,8 @@ function Seating() {
     <div className='flex flex-col items-center'>
       <img src={ulesrend} className='w-full' alt='' />
       <div className='p-3'>
-        <div className='p-3 text-2xl text-center font-bold'>Ülésrend</div>
-        <table className='table-auto'>
+        <div className='p-3 text-4xl text-center font-bold'>Ülésrend</div>
+        <table className='table-auto border border-black'>
           <thead>
             <tr>
               <th>Név</th>
@@ -15,104 +15,104 @@ function Seating() {
             </tr>
           </thead>
           <tbody className='p-3'>
-            <tr><td>Adrevácz Péter	</td><td>9</td></tr>
-            <tr><td>Annus Krisztina	</td><td>10</td></tr>
-            <tr><td>Bagossy Rebeka	</td><td>12</td></tr>
-            <tr><td>Bakó Tamás	</td><td>11</td></tr>
-            <tr><td>Bencsik Marianna	</td><td>12</td></tr>
-            <tr><td>Bereczki Kinga Krisztina	</td><td>1</td></tr>
-            <tr><td>Borbély Ronett	</td><td>7</td></tr>
-            <tr><td>Botyánszki Adrienn	</td><td>11</td></tr>
-            <tr><td>Czerpán István	</td><td>9</td></tr>
-            <tr><td>Czerpán Sándor	</td><td>2</td></tr>
-            <tr><td>Czerpán Sándorné	</td><td>2</td></tr>
-            <tr><td>Czerpán Zsolt	</td><td>9</td></tr>
-            <tr><td>Csiki Roland	</td><td>8</td></tr>
-            <tr><td>Csiki Tamás	</td><td>8</td></tr>
-            <tr><td>Csiki Tamás	</td><td>8</td></tr>
-            <tr><td>Csiki Tamásné	</td><td>8</td></tr>
-            <tr><td>Dörnyei Szabolcs	</td><td>12</td></tr>
-            <tr><td>Emesz Dávid	</td><td>4</td></tr>
-            <tr><td>Emesz Johanna	</td><td>4</td></tr>
-            <tr><td>Emesz Tibor Ákos	</td><td>4</td></tr>
-            <tr><td>Emesz Tibor Ákosné	</td><td>4</td></tr>
-            <tr><td>Emesz Zsófia	</td><td>4</td></tr>
-            <tr><td>Engel Sándor	</td><td>3</td></tr>
-            <tr><td>Engelné Eszék Erika	</td><td>3</td></tr>
-            <tr><td>Gót-Horváth Ádám	</td><td>7</td></tr>
-            <tr><td>Grósz Adrienn	</td><td>6</td></tr>
-            <tr><td>Grósz Gyula László	</td><td>6</td></tr>
-            <tr><td>Grósz Gyula Lászlóné	</td><td>6</td></tr>
-            <tr><td>Grósz Mirkó 	</td><td>6</td></tr>
-            <tr><td>Grósz Olivér 	</td><td>6</td></tr>
-            <tr><td>Grósz Szófia	</td><td>6</td></tr>
-            <tr><td>Grósz Tamás	</td><td>6</td></tr>
-            <tr><td>Grósz-Láng Evelin	</td><td>6</td></tr>
-            <tr><td>Gyurász Marianna	</td><td>11</td></tr>
-            <tr><td>Halmos Ádám	</td><td>Főasztal</td></tr>
-            <tr><td>Halmos Attila	</td><td>1</td></tr>
-            <tr><td>Halmos Dávid	</td><td>1</td></tr>
-            <tr><td>Halmos Dominika	</td><td>Főasztal</td></tr>
-            <tr><td>Halmos Frank	</td><td>1</td></tr>
-            <tr><td>Halmos Ruth	</td><td>1</td></tr>
-            <tr><td>Halmos Tamás	</td><td>1</td></tr>
-            <tr><td>Hauberger Szabina	</td><td>12</td></tr>
-            <tr><td>Horváth Ádám	</td><td>12</td></tr>
-            <tr><td>Horváth Bálint	</td><td>5</td></tr>
-            <tr><td>Horváth Lilien	</td><td>4</td></tr>
-            <tr><td>Horváth-Istokovics Laura	</td><td>5</td></tr>
-            <tr><td>Horváth-Szabó Alíz 	</td><td>6</td></tr>
-            <tr><td>Horváth-Szabó Léna 	</td><td>6</td></tr>
-            <tr><td>Horváth-Szabó Nadin	</td><td>6</td></tr>
-            <tr><td>Horváth-Szabó Zsolt	</td><td>6</td></tr>
-            <tr><td>Horváthné Emesz Krisztina	</td><td>4</td></tr>
-            <tr><td>Istokovics Ferenc	</td><td>5</td></tr>
-            <tr><td>Istokovics Ferencné	</td><td>5</td></tr>
-            <tr><td>Istokovics László	</td><td>5</td></tr>
-            <tr><td>Istokovicsné Hegedűs Mónika	</td><td>5</td></tr>
-            <tr><td>Jéger Csaba	</td><td>10</td></tr>
-            <tr><td>Kaposvári Bohár Dániel	</td><td>12</td></tr>
-            <tr><td>Kelemen Tamás	</td><td>10</td></tr>
-            <tr><td>Kiss-Csiki Melinda	</td><td>8</td></tr>
-            <tr><td>Kovácsevics Mariann	</td><td>9</td></tr>
-            <tr><td>Kövesi Péter	</td><td>11</td></tr>
-            <tr><td>Kövesi-Menyhárt Lilla	</td><td>11</td></tr>
-            <tr><td>Kukai Eszter	</td><td>2</td></tr>
-            <tr><td>Lajos Levente	</td><td>10</td></tr>
-            <tr><td>Lalak Lesya	</td><td>10</td></tr>
-            <tr><td>Lombos Péter	</td><td>7</td></tr>
-            <tr><td>Lőrincz Attila	</td><td>12</td></tr>
-            <tr><td>Lőrinczi Anna	</td><td>10</td></tr>
-            <tr><td>Makra László	</td><td>3</td></tr>
-            <tr><td>Makra Szilvia	</td><td>3</td></tr>
-            <tr><td>Mester Balázs	</td><td>3</td></tr>
-            <tr><td>Mester Matilda 	</td><td>3</td></tr>
-            <tr><td>Mester Réka	</td><td>3</td></tr>
-            <tr><td>Molnár Aliz	</td><td>3</td></tr>
-            <tr><td>Molnár Gréta	</td><td>7</td></tr>
-            <tr><td>Nagy Anikó	</td><td>3</td></tr>
-            <tr><td>Nagy Gergely	</td><td>2</td></tr>
-            <tr><td>Nagy Lóránt </td><td>2</td></tr>
-            <tr><td>Nagy Márk 	</td><td>2</td></tr>
-            <tr><td>Nagy Sándor	</td><td>2</td></tr>
-            <tr><td>Nagyné Czerpán Ágnes	</td><td>2</td></tr>
-            <tr><td>Nagyné Csobán Lilla	</td><td>2</td></tr>
-            <tr><td>Pozsgai Ildikó	</td><td>1</td></tr>
-            <tr><td>Pozsgai Nicole	</td><td>1</td></tr>
-            <tr><td>Pozsgai Patrick	</td><td>1</td></tr>
-            <tr><td>Rőmer Viola	</td><td>12</td></tr>
-            <tr><td>Soós Adél	</td><td>1</td></tr>
-            <tr><td>Steiner Zsolt	</td><td>7</td></tr>
-            <tr><td>Szabó Tímea	</td><td>8</td></tr>
-            <tr><td>Szilvási Krisztián	</td><td>10</td></tr>
-            <tr><td>Sztancs Gréta	</td><td>7</td></tr>
-            <tr><td>Tóth Anikó	</td><td>7</td></tr>
-            <tr><td>Trömböczky Zselyke	</td><td>1</td></tr>
-            <tr><td>Váncsodi József Oberon	</td><td>12</td></tr>
-            <tr><td>Varga Dániel	</td><td>3</td></tr>
-            <tr><td>Vezekényi Zsuzsanna	</td><td>9</td></tr>
-            <tr><td>Weiszkopf Dorottya	</td><td>2</td></tr>
-            <tr><td>Weiszkopf Gábor	</td><td>2</td></tr>
+            <tr className='border border-black'><td className='px-3'>Adrevácz Péter	</td><td className='px-3'>9</td></tr>
+            <tr className='border border-black'><td className='px-3'>Annus Krisztina	</td><td className='px-3'>10</td></tr>
+            <tr className='border border-black'><td className='px-3'>Bagossy Rebeka	</td><td className='px-3'>12</td></tr>
+            <tr className='border border-black'><td className='px-3'>Bakó Tamás	</td><td className='px-3'>11</td></tr>
+            <tr className='border border-black'><td className='px-3'>Bencsik Marianna	</td><td className='px-3'>12</td></tr>
+            <tr className='border border-black'><td className='px-3'>Bereczki Kinga Krisztina	</td><td className='px-3'>1</td></tr>
+            <tr className='border border-black'><td className='px-3'>Borbély Ronett	</td><td className='px-3'>7</td></tr>
+            <tr className='border border-black'><td className='px-3'>Botyánszki Adrienn	</td><td className='px-3'>11</td></tr>
+            <tr className='border border-black'><td className='px-3'>Czerpán István	</td><td className='px-3'>9</td></tr>
+            <tr className='border border-black'><td className='px-3'>Czerpán Sándor	</td><td className='px-3'>2</td></tr>
+            <tr className='border border-black'><td className='px-3'>Czerpán Sándorné	</td><td className='px-3'>2</td></tr>
+            <tr className='border border-black'><td className='px-3'>Czerpán Zsolt	</td><td className='px-3'>9</td></tr>
+            <tr className='border border-black'><td className='px-3'>Csiki Roland	</td><td className='px-3'>8</td></tr>
+            <tr className='border border-black'><td className='px-3'>Csiki Tamás	</td><td className='px-3'>8</td></tr>
+            <tr className='border border-black'><td className='px-3'>Csiki Tamás	</td><td className='px-3'>8</td></tr>
+            <tr className='border border-black'><td className='px-3'>Csiki Tamásné	</td><td className='px-3'>8</td></tr>
+            <tr className='border border-black'><td className='px-3'>Dörnyei Szabolcs	</td><td className='px-3'>12</td></tr>
+            <tr className='border border-black'><td className='px-3'>Emesz Dávid	</td><td className='px-3'>4</td></tr>
+            <tr className='border border-black'><td className='px-3'>Emesz Johanna	</td><td className='px-3'>4</td></tr>
+            <tr className='border border-black'><td className='px-3'>Emesz Tibor Ákos	</td><td className='px-3'>4</td></tr>
+            <tr className='border border-black'><td className='px-3'>Emesz Tibor Ákosné	</td><td className='px-3'>4</td></tr>
+            <tr className='border border-black'><td className='px-3'>Emesz Zsófia	</td><td className='px-3'>4</td></tr>
+            <tr className='border border-black'><td className='px-3'>Engel Sándor	</td><td className='px-3'>3</td></tr>
+            <tr className='border border-black'><td className='px-3'>Engelné Eszék Erika	</td><td className='px-3'>3</td></tr>
+            <tr className='border border-black'><td className='px-3'>Gót-Horváth Ádám	</td><td className='px-3'>7</td></tr>
+            <tr className='border border-black'><td className='px-3'>Grósz Adrienn	</td><td className='px-3'>6</td></tr>
+            <tr className='border border-black'><td className='px-3'>Grósz Gyula László	</td><td className='px-3'>6</td></tr>
+            <tr className='border border-black'><td className='px-3'>Grósz Gyula Lászlóné	</td><td className='px-3'>6</td></tr>
+            <tr className='border border-black'><td className='px-3'>Grósz Mirkó 	</td><td className='px-3'>6</td></tr>
+            <tr className='border border-black'><td className='px-3'>Grósz Olivér 	</td><td className='px-3'>6</td></tr>
+            <tr className='border border-black'><td className='px-3'>Grósz Szófia	</td><td className='px-3'>6</td></tr>
+            <tr className='border border-black'><td className='px-3'>Grósz Tamás	</td><td className='px-3'>6</td></tr>
+            <tr className='border border-black'><td className='px-3'>Grósz-Láng Evelin	</td><td className='px-3'>6</td></tr>
+            <tr className='border border-black'><td className='px-3'>Gyurász Marianna	</td><td className='px-3'>11</td></tr>
+            <tr className='border border-black'><td className='px-3'>Halmos Ádám	</td><td className='px-3'>Főasztal</td></tr>
+            <tr className='border border-black'><td className='px-3'>Halmos Attila	</td><td className='px-3'>1</td></tr>
+            <tr className='border border-black'><td className='px-3'>Halmos Dávid	</td><td className='px-3'>1</td></tr>
+            <tr className='border border-black'><td className='px-3'>Halmos Dominika	</td><td className='px-3'>Főasztal</td></tr>
+            <tr className='border border-black'><td className='px-3'>Halmos Frank	</td><td className='px-3'>1</td></tr>
+            <tr className='border border-black'><td className='px-3'>Halmos Ruth	</td><td className='px-3'>1</td></tr>
+            <tr className='border border-black'><td className='px-3'>Halmos Tamás	</td><td className='px-3'>1</td></tr>
+            <tr className='border border-black'><td className='px-3'>Hauberger Szabina	</td><td className='px-3'>12</td></tr>
+            <tr className='border border-black'><td className='px-3'>Horváth Ádám	</td><td className='px-3'>12</td></tr>
+            <tr className='border border-black'><td className='px-3'>Horváth Bálint	</td><td className='px-3'>5</td></tr>
+            <tr className='border border-black'><td className='px-3'>Horváth Lilien	</td><td className='px-3'>4</td></tr>
+            <tr className='border border-black'><td className='px-3'>Horváth-Istokovics Laura	</td><td className='px-3'>5</td></tr>
+            <tr className='border border-black'><td className='px-3'>Horváth-Szabó Alíz 	</td><td className='px-3'>6</td></tr>
+            <tr className='border border-black'><td className='px-3'>Horváth-Szabó Léna 	</td><td className='px-3'>6</td></tr>
+            <tr className='border border-black'><td className='px-3'>Horváth-Szabó Nadin	</td><td className='px-3'>6</td></tr>
+            <tr className='border border-black'><td className='px-3'>Horváth-Szabó Zsolt	</td><td className='px-3'>6</td></tr>
+            <tr className='border border-black'><td className='px-3'>Horváthné Emesz Krisztina	</td><td className='px-3'>4</td></tr>
+            <tr className='border border-black'><td className='px-3'>Istokovics Ferenc	</td><td className='px-3'>5</td></tr>
+            <tr className='border border-black'><td className='px-3'>Istokovics Ferencné	</td><td className='px-3'>5</td></tr>
+            <tr className='border border-black'><td className='px-3'>Istokovics László	</td><td className='px-3'>5</td></tr>
+            <tr className='border border-black'><td className='px-3'>Istokovicsné Hegedűs Mónika	</td><td className='px-3'>5</td></tr>
+            <tr className='border border-black'><td className='px-3'>Jéger Csaba	</td><td className='px-3'>10</td></tr>
+            <tr className='border border-black'><td className='px-3'>Kaposvári Bohár Dániel	</td><td className='px-3'>12</td></tr>
+            <tr className='border border-black'><td className='px-3'>Kelemen Tamás	</td><td className='px-3'>10</td></tr>
+            <tr className='border border-black'><td className='px-3'>Kiss-Csiki Melinda	</td><td className='px-3'>8</td></tr>
+            <tr className='border border-black'><td className='px-3'>Kovácsevics Mariann	</td><td className='px-3'>9</td></tr>
+            <tr className='border border-black'><td className='px-3'>Kövesi Péter	</td><td className='px-3'>11</td></tr>
+            <tr className='border border-black'><td className='px-3'>Kövesi-Menyhárt Lilla	</td><td className='px-3'>11</td></tr>
+            <tr className='border border-black'><td className='px-3'>Kukai Eszter	</td><td className='px-3'>2</td></tr>
+            <tr className='border border-black'><td className='px-3'>Lajos Levente	</td><td className='px-3'>10</td></tr>
+            <tr className='border border-black'><td className='px-3'>Lalak Lesya	</td><td className='px-3'>10</td></tr>
+            <tr className='border border-black'><td className='px-3'>Lombos Péter	</td><td className='px-3'>7</td></tr>
+            <tr className='border border-black'><td className='px-3'>Lőrincz Attila	</td><td className='px-3'>12</td></tr>
+            <tr className='border border-black'><td className='px-3'>Lőrinczi Anna	</td><td className='px-3'>10</td></tr>
+            <tr className='border border-black'><td className='px-3'>Makra László	</td><td className='px-3'>3</td></tr>
+            <tr className='border border-black'><td className='px-3'>Makra Szilvia	</td><td className='px-3'>3</td></tr>
+            <tr className='border border-black'><td className='px-3'>Mester Balázs	</td><td className='px-3'>3</td></tr>
+            <tr className='border border-black'><td className='px-3'>Mester Matilda 	</td><td className='px-3'>3</td></tr>
+            <tr className='border border-black'><td className='px-3'>Mester Réka	</td><td className='px-3'>3</td></tr>
+            <tr className='border border-black'><td className='px-3'>Molnár Aliz	</td><td className='px-3'>3</td></tr>
+            <tr className='border border-black'><td className='px-3'>Molnár Gréta	</td><td className='px-3'>7</td></tr>
+            <tr className='border border-black'><td className='px-3'>Nagy Anikó	</td><td className='px-3'>3</td></tr>
+            <tr className='border border-black'><td className='px-3'>Nagy Gergely	</td><td className='px-3'>2</td></tr>
+            <tr className='border border-black'><td className='px-3'>Nagy Lóránt </td><td className='px-3'>2</td></tr>
+            <tr className='border border-black'><td className='px-3'>Nagy Márk 	</td><td className='px-3'>2</td></tr>
+            <tr className='border border-black'><td className='px-3'>Nagy Sándor	</td><td className='px-3'>2</td></tr>
+            <tr className='border border-black'><td className='px-3'>Nagyné Czerpán Ágnes	</td><td className='px-3'>2</td></tr>
+            <tr className='border border-black'><td className='px-3'>Nagyné Csobán Lilla	</td><td className='px-3'>2</td></tr>
+            <tr className='border border-black'><td className='px-3'>Pozsgai Ildikó	</td><td className='px-3'>1</td></tr>
+            <tr className='border border-black'><td className='px-3'>Pozsgai Nicole	</td><td className='px-3'>1</td></tr>
+            <tr className='border border-black'><td className='px-3'>Pozsgai Patrick	</td><td className='px-3'>1</td></tr>
+            <tr className='border border-black'><td className='px-3'>Rőmer Viola	</td><td className='px-3'>12</td></tr>
+            <tr className='border border-black'><td className='px-3'>Soós Adél	</td><td className='px-3'>1</td></tr>
+            <tr className='border border-black'><td className='px-3'>Steiner Zsolt	</td><td className='px-3'>7</td></tr>
+            <tr className='border border-black'><td className='px-3'>Szabó Tímea	</td><td className='px-3'>8</td></tr>
+            <tr className='border border-black'><td className='px-3'>Szilvási Krisztián	</td><td className='px-3'>10</td></tr>
+            <tr className='border border-black'><td className='px-3'>Sztancs Gréta	</td><td className='px-3'>7</td></tr>
+            <tr className='border border-black'><td className='px-3'>Tóth Anikó	</td><td className='px-3'>7</td></tr>
+            <tr className='border border-black'><td className='px-3'>Trömböczky Zselyke	</td><td className='px-3'>1</td></tr>
+            <tr className='border border-black'><td className='px-3'>Váncsodi József Oberon	</td><td className='px-3'>12</td></tr>
+            <tr className='border border-black'><td className='px-3'>Varga Dániel	</td><td className='px-3'>3</td></tr>
+            <tr className='border border-black'><td className='px-3'>Vezekényi Zsuzsanna	</td><td className='px-3'>9</td></tr>
+            <tr className='border border-black'><td className='px-3'>Weiszkopf Dorottya	</td><td className='px-3'>2</td></tr>
+            <tr className='border border-black'><td className='px-3'>Weiszkopf Gábor	</td><td className='px-3'>2</td></tr>
           </tbody>
         </table>
       </div>
