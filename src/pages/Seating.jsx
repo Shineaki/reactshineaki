@@ -1,10 +1,14 @@
 import React from 'react'
 import ulesrend from '../data/ulesrend.png';
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
 
 function Seating() {
   return (
     <div className='flex flex-col items-center'>
-      <img src={ulesrend} className='w-full' alt='' />
+      <Zoom>
+        <img src={ulesrend} className='w-full' alt='' />
+      </Zoom>
       <div className='p-3'>
         <div className='p-3 text-4xl text-center font-bold'>Ülésrend</div>
         <table className='table-auto border border-black'>
