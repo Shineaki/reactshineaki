@@ -47,14 +47,19 @@ function Menu() {
           <li>Pascucci kávé</li>
           <li>A Villányi borvidékről Kovács Pince folyóborai, Olaszrizling, Rosé, Portugieser</li>
           <li>Csapolt Pécsi sör</li>
+        </ul>
+
+        <div className='text-4xl font-bolt p-5 text-center'>Röviditalok 🥃</div>
+        <ul className='list-disc list-inside'>
           <li>Jim beam whiskey</li>
           <li>Russian Standard Original Vodka</li>
           <li>Jagermeister</li>
           <li>Buldog Gin</li>
           <li>Baileys</li>
+          <li>HÁZIPÁLINKÁK (eper, málna, ...)</li>
         </ul>
-      </div>
     </div>
+    </div >
   )
 }
 
