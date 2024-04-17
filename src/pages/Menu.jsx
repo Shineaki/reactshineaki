@@ -69,7 +69,7 @@ function Menu() {
           <li>Jagermeister</li>
           <li>Buldog Gin</li>
           <li>Baileys</li>
-          <li>HÁZIPÁLINKÁK (eper, málna, ...)</li>
+          <li>HÁZIPÁLINKÁK (eper, málna, szilva, barack)</li>
         </ul>
       </div>
     </div >
