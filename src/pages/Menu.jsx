@@ -38,6 +38,19 @@ function Menu() {
         <ul className='list-disc list-inside'>
           <li>Töltött káposzta, avagy az igazi szármánt - Tejföllel és fehér kenyérrel</li>
         </ul>
+
+        <div className='text-4xl font-bolt p-5 text-center'>Torták 🍰</div>
+        <ul className='list-disc list-inside'>
+          <li>Málnás pisztácia mousse (glutén, cukor, tejmentes)</li>
+          <li>Sznikersz torta (glutén, cukor, tejmentes, tojásmentes, vegán)</li>
+          <li>Málnás sajttorta (glutén, cukor, laktózmentes)</li>
+          <li>Málnás-pisztáciás zserbó (glutén, cukor, tejmentes)</li>
+          <li>Répatorta (glutén, cukor, tej, tojásmentes, vegán)</li>
+          <li>Epres madártej (glutén, cukor, tejmentes) </li>
+          <li>Kinder torta (glutén, cukor, tej, tojásmentes, vegán) </li>
+          <li>Áfonya-mangó mousse (glutén-cukor-tejmentes)</li>
+        </ul>
+
         <div className='text-4xl font-bolt p-5 text-center'>Italok 🥂</div>
         <ul className='list-disc list-inside'>
           <li>Szóda, szénsavmentes ásványvíz</li>
@@ -58,7 +71,7 @@ function Menu() {
           <li>Baileys</li>
           <li>HÁZIPÁLINKÁK (eper, málna, ...)</li>
         </ul>
-    </div>
+      </div>
     </div >
   )
 }
