@@ -14,17 +14,18 @@ function Menu() {
         <ul className='list-disc list-inside'>
           <li>Friss, szezonális zöldségekből készült leves (vegán)</li>
         </ul>
-        <div className='text-4xl font-bolt p-5 text-center'>Főételek 🥗</div>
-        <ul className='list-disc list-inside'>
-          <li>BBQ zöldség nyársak</li>
-          <li>Tavaszi quinoa saláta zöldséggolyókkal, brokkolis hajdinás rétes, parmezános borsos dresszinggel</li>
-          <li>Roston sült jércemell, brokkoli textúrák, humusz ágyon</li>
-        </ul>
         <div className='text-4xl font-bolt p-5 text-center'>Sültek fatálakon 🍖</div>
         <ul className='list-disc list-inside'>
           <li>Ropogós tanyasi kacsacombok gondosan sütve, köményes, karamellás, házi balzsamecetes, szilvás párolt lilakáposztával</li>
           <li>Cigánypecsenye, az örök kedvenc, hagyományosan roston sütve, sertés tarjából, szalonna szafttal, füstölt házi kenyérszalonna taréjjal, meglehetősen fokhagymásan</li>
           <li>Házi sajttal- füstölt sonkával, petrezselyem krémmel töltött csirkemell</li>
+        </ul>
+        <div className='text-4xl font-bolt p-5 text-center'>Speciális étrendet követők főételei 🥗</div>
+        <ul className='list-disc list-inside'>
+          <li>BBQ zöldség nyársak (vegán)</li>
+          <li>Tavaszi quinoa saláta zöldséggolyókkal, brokkolis hajdinás rétes, parmezános borsos dresszinggel (vegán)</li>
+          <li>Roston sült jércemell, brokkoli textúrák, humusz ágyon (GM, LM, Cukormentes)</li>
+          <li>Brokkolis répás csirkemelles bébi étel (Baba)</li>
         </ul>
         <div className='text-4xl font-bolt p-5 text-center'>Köretek 🍟</div>
         <ul className='list-disc list-inside'>

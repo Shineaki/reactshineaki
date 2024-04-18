@@ -1,7 +1,7 @@
 import React from 'react'
 import ulesrend from '../data/ulesrend.png';
-import Zoom from 'react-medium-image-zoom'
-import 'react-medium-image-zoom/dist/styles.css'
+import Zoom from 'react-medium-image-zoom';
+import 'react-medium-image-zoom/dist/styles.css';
 
 function Seating() {
   return (
