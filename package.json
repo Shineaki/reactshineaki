@@ -21,7 +21,9 @@
     "react-query": "^3.39.3",
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
-    "react-vertical-timeline-component": "^3.6.0"
+    "react-spinners": "^0.13.8",
+    "react-vertical-timeline-component": "^3.6.0",
+    "uuid": "^9.0.1"
   },
   "scripts": {
     "start": "react-scripts start",

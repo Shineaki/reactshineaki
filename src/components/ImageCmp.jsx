@@ -12,7 +12,7 @@ export default function ImageCmp({ data }) {
     useEffect(() => {
         const imagesRef = ref(storage, 'images/' + data);
         getDownloadURL(imagesRef).then((url) => {
-            console.log(url);
+            // console.log(url);
             setImg(url);
         })
     }, [setImg, data])
