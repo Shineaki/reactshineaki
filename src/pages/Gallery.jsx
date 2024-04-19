@@ -45,17 +45,16 @@ function Gallery() {
       }
     }
     getData();
-  })
+  }, [pageLimit])
 
   if (imagesData == null) {
-    return <div>Loading :3</div>
+    return <div>Loading 🐶</div>
   }
 
-  // console.log(folderData.images);
   return (
     <div className="flex flex-col">
-      <div className="flex flex-row justify-center items-center  mb-3 mx-6">
-        <div className="md:text-3xl">Galéria</div>
+      <div className="flex flex-row justify-center items-center  my-5 mx-6">
+        <div className="md:text-4xl montserrat">Galéria</div>
       </div>
       <div className="flex flex-wrap m-3 gap-1 md:gap-3 items-center justify-center">
         <input id="myFileInput" type="file" accept="image/*" capture="environment" style={{display: 'none'}} ref={hiddenFileInput} />
