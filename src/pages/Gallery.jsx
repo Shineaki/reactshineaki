@@ -8,13 +8,14 @@ import { GrGallery } from "react-icons/gr";
 import { v4 as uuidv4 } from 'uuid';
 import { ref, uploadBytes } from "firebase/storage";
 import { HashLoader } from "react-spinners";
+import { determineSize, resizeImage } from "../components/ImageResizer";
 
 function Gallery() {
   const hiddenCameraInput = useRef(null);
   const hiddenGalleryInput = useRef(null);
   const [imagesData, setImagesData] = useState();
   const [uploading, setUploading] = useState(false);
-  const [pageLimit] = useState(10);
+  const [pageLimit] = useState(16);
   const [uploadStatus, setUploadStatus] = useState([]);
   const [numOfPages, setNumOfPages] = useState(-1);
   const [currentPage, setCurrentPage] = useState(1);
@@ -42,9 +43,13 @@ function Gallery() {
         for (let i = 0; i < fileData.length; i++) {
           var tmp_fname = uuidv4().slice(0, 8) + "_" + fileData[i].name;
           console.log(tmp_fname);
-          const file_ref = ref(storage, "images/" + tmp_fname);
+          var sized_obj = await determineSize(fileData[i]);
+          var resized_image = await resizeImage(sized_obj);
+          const file_ref1 = ref(storage, "images/" + tmp_fname);
+          const file_ref2 = ref(storage, "preview/" + tmp_fname);
           console.log("file upload started");
-          await uploadBytes(file_ref, fileData[i]);
+          await uploadBytes(file_ref1, fileData[i]);
+          await uploadBytes(file_ref2, resized_image);
           console.log("file upload finished");
           const db_obj_ref = doc(firestore, "gallery", "images");
           await updateDoc(db_obj_ref, {
@@ -55,9 +60,13 @@ function Gallery() {
         }
       } else {
         var tmp_single_fname = uuidv4().slice(0, 8) + "_" + fileData.name;
-        const file_ref = ref(storage, "images/" + tmp_single_fname);
+        var sized_objj = await determineSize(fileData);
+        var resized_imagee = await resizeImage(sized_objj);
+        const file_ref1 = ref(storage, "images/" + tmp_single_fname);
+        const file_ref2 = ref(storage, "preview/" + tmp_single_fname);
         console.log("file upload started");
-        await uploadBytes(file_ref, fileData);
+        await uploadBytes(file_ref1, fileData);
+        await uploadBytes(file_ref2, resized_imagee);
         console.log("file upload finished");
         const db_obj_ref = doc(firestore, "gallery", "images");
         await updateDoc(db_obj_ref, {
