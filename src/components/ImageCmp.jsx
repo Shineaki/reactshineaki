@@ -15,13 +15,14 @@ export default function ImageCmp({ data }) {
             console.log(url);
             setImg(url);
         })
-    }, [setImg])
+    }, [setImg, data])
 
     return (
         <div className="rounded-md shadow-md h-28 w-28 md:w-60 md:h-60">
             {img && (
                 <Zoom>
                     <img src={img}
+                        alt=""
                         className="h-28 w-28 md:w-60 md:h-60 rounded-md object-cover"
                         style={loaded ? {} : { visibility: 'hidden' }}
                         onLoad={() => setLoaded(true)}
