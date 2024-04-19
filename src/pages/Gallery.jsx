@@ -14,7 +14,7 @@ function Gallery() {
   const hiddenGalleryInput = useRef(null);
   const [imagesData, setImagesData] = useState();
   const [uploading, setUploading] = useState(false);
-  const [pageLimit] = useState(22);
+  const [pageLimit] = useState(10);
   const [uploadStatus, setUploadStatus] = useState([]);
   const [numOfPages, setNumOfPages] = useState(-1);
   const [currentPage, setCurrentPage] = useState(1);
