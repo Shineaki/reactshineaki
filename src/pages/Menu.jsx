@@ -8,7 +8,9 @@ function Menu() {
         <div className='text-4xl font-bolt p-5 text-center'>Vendégváró Falatok 🥨</div>
         <ul className='list-disc list-inside'>
           <li>Tenkes sajtos rúdacskák</li>
-          <li>Céklafasírt golyócskák, zöldborsópüré ágyon, karamellizált répával</li>
+          <li>Céklafasírt golyócskák, zöldborsópüré ágyon, karamellizált répával (vegán)</li>
+          <li>Pogácsa (GM, LM, Cukormentes)</li>
+          <li>Limonádé- és fröccsbár</li>
         </ul>
         <div className='text-4xl font-bolt p-5 text-center'>Leves 🍜</div>
         <ul className='list-disc list-inside'>
